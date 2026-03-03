@@ -2,44 +2,50 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "type": "minecraft:alternatives",
-      "children": [
+      "bonus_rolls": 0.0,
+      "entries": [
         {
-          "type": "minecraft:item",
-          "conditions": [
+          "type": "minecraft:alternatives",
+          "children": [
             {
-              "condition": "minecraft:match_tool",
-              "predicate": {
-                "predicates": {
-                  "minecraft:enchantments": [
-                    {
-                      "enchantments": "minecraft:silk_touch",
-                      "levels": {
-                        "min": 1
-                      }
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "predicates": {
+                      "minecraft:enchantments": [
+                        {
+                          "enchantments": "minecraft:silk_touch",
+                          "levels": {
+                            "min": 1
+                          }
+                        }
+                      ]
                     }
-                  ]
+                  }
                 }
-              }
-            }
-          ],
-          "name": "tutorialmod:bismuth_deepslate_ore"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "enchantment": "minecraft:fortune",
-              "formula": "minecraft:ore_drops",
-              "function": "minecraft:apply_bonus"
+              ],
+              "name": "tutorialmod:bismuth_deepslate_ore"
             },
             {
-              "function": "minecraft:explosion_decay"
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:ore_drops",
+                  "function": "minecraft:apply_bonus"
+                },
+                {
+                  "function": "minecraft:explosion_decay"
+                }
+              ],
+              "name": "tutorialmod:raw_bismuth"
             }
-          ],
-          "random_sequence": "tutorialmod:raw_bismuth"
+          ]
         }
-      ]
+      ],
+      "rolls": 1.0
     }
   ],
   "random_sequence": "tutorialmod:blocks/bismuth_deepslate_ore"

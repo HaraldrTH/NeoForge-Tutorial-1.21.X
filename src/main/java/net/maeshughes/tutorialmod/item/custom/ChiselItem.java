@@ -15,18 +15,18 @@ import java.util.Map;
 
 public class ChiselItem extends Item {
     private static final Map<Block, Block> CHISEL_MAP =
-            Map.of(
-                    Blocks.STONE, Blocks.STONE_BRICKS,
-                    Blocks.STONE_BRICKS, Blocks.CHISELED_STONE_BRICKS,
-                    Blocks.END_STONE, Blocks.END_STONE_BRICKS,
-                    Blocks.DEEPSLATE, Blocks.DEEPSLATE_BRICKS,
-                    Blocks.SANDSTONE, Blocks.SMOOTH_SANDSTONE,
-                    Blocks.SMOOTH_SANDSTONE, Blocks.CUT_SANDSTONE,
-                    Blocks.CUT_SANDSTONE, Blocks.CHISELED_SANDSTONE,
-                    Blocks.QUARTZ_BLOCK, Blocks.QUARTZ_BRICKS,
-                    Blocks.QUARTZ_BRICKS, Blocks.CHISELED_QUARTZ_BLOCK,
-                    Blocks.CHISELED_QUARTZ_BLOCK, Blocks.QUARTZ_PILLAR
-                    //Blocks.QUARTZ_PILLAR, Blocks.QUARTZ_BLOCK
+            Map.ofEntries(
+                    Map.entry(Blocks.STONE, Blocks.STONE_BRICKS),
+                    Map.entry(Blocks.STONE_BRICKS, Blocks.CHISELED_STONE_BRICKS),
+                    Map.entry(Blocks.END_STONE, Blocks.END_STONE_BRICKS),
+                    Map.entry(Blocks.DEEPSLATE, Blocks.DEEPSLATE_BRICKS),
+                    Map.entry(Blocks.SANDSTONE, Blocks.SMOOTH_SANDSTONE),
+                    Map.entry(Blocks.SMOOTH_SANDSTONE, Blocks.CUT_SANDSTONE),
+                    Map.entry(Blocks.CUT_SANDSTONE, Blocks.CHISELED_SANDSTONE),
+                    Map.entry(Blocks.QUARTZ_BLOCK, Blocks.QUARTZ_BRICKS),
+                    Map.entry(Blocks.QUARTZ_BRICKS, Blocks.CHISELED_QUARTZ_BLOCK),
+                    Map.entry(Blocks.CHISELED_QUARTZ_BLOCK, Blocks.QUARTZ_PILLAR),
+                    Map.entry(Blocks.QUARTZ_PILLAR, Blocks.QUARTZ_BLOCK)
             );
     public ChiselItem(Properties properties) {
         super(properties);
