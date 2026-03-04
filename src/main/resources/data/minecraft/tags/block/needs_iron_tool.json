@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "tutorialmod:bismuth_ore"
+    "tutorialmod:bismuth_ore",
+    "tutorialmod:magic_block"
   ]
 }

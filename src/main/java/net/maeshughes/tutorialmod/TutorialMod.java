@@ -61,6 +61,15 @@ public class TutorialMod {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.BISMUTH);
             event.accept(ModItems.RAW_BISMUTH);
+            event.accept(ModItems.STARLIGHT_ASHES);
+            event.accept(ModItems.FROSTFIRE_ICE);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
+            event.accept(ModItems.RADISH);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
             event.accept(ModItems.CHISEL);
         }
 
