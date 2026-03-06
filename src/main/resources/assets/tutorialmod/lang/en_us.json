@@ -3,6 +3,7 @@
   "item.tutorialmod.raw_bismuth": "Raw Bismuth",
   "item.tutorialmod.chisel": "Chisel",
   "item.tutorialmod.radish": "Radish",
+  "tooltip.tutorialmod.radish": "Tastes really great",
   "item.tutorialmod.frostfire_ice": "FrostFire Ice",
   "item.tutorialmod.starlight_ashes": "Starlight Ashes",
 
@@ -13,6 +14,10 @@
 
 
   "creativetab.tutorialmod.bismuth_items": "Bismuth Items",
-  "creativetab.tutorialmod.bismuth_blocks": "Bismuth Blocks"
+  "creativetab.tutorialmod.bismuth_blocks": "Bismuth Blocks",
+
+  "tooltip.tutorialmod.magic_block.tooltip": "§kHi§r This block is very §9MAGICAl!§r §kHi§r",
+  "tooltip.tutorialmod.chisel.shift_down": "This item can chisel blocks into different shapes",
+  "tooltip.tutorialmod.chisel": "Press §eShift§r for more Information on this item "
 
 }
