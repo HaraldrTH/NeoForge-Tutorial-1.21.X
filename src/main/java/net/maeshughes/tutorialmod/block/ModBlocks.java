@@ -1,6 +1,7 @@
 package net.maeshughes.tutorialmod.block;
 
 import net.maeshughes.tutorialmod.TutorialMod;
+import net.maeshughes.tutorialmod.block.custom.BismuthLampBlock;
 import net.maeshughes.tutorialmod.block.custom.MagicBlock;
 import net.maeshughes.tutorialmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -53,6 +54,10 @@ public class ModBlocks {
             () -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
     public static final DeferredBlock<TrapDoorBlock> BISMUTH_TRAPDOOR = registerBlock("bismuth_trapdoor",
             () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final DeferredBlock<Block> BISMUTH_LAMP = registerBlock("bismuth_lamp",
+            () -> new BismuthLampBlock(BlockBehaviour.Properties.of().strength(2f)
+                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(BismuthLampBlock.CLICKED) ? 15 : 0)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
